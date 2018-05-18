@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="563e0dbf-c81b-44d3-a65b-76c85d837e19">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="ThongKe" uuid="4ade171f-dcb2-4e0e-a2b2-08f078b3dee7">
+		<queryString language="SQL">
+			<![CDATA[Select GioiTinh_20151094, Count(*) SoLuong_20151094 From DocGia
+Group By GioiTinh_20151094]]>
+		</queryString>
+		<field name="GioiTinh_20151094" class="java.lang.String"/>
+		<field name="SoLuong_20151094" class="java.lang.Integer"/>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[Select GioiTinh_20151094, Count(*) SoLuong_20151094 From DocGia
+Group By GioiTinh_20151094]]>
+	</queryString>
+	<field name="GioiTinh_20151094" class="java.lang.String"/>
+	<field name="SoLuong_20151094" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="236" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="b7c6f1e7-3fd4-410c-9e25-38299417138e" x="55" y="186" width="431" height="25"/>
+				<textElement textAlignment="Center">
+					<font fontName="ArialFont" size="16" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[THỐNG KÊ ĐỘC GIẢ THEO GIỚI TÍNH]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0f6ae3c8-c294-4205-a096-fb6ebac4f67f" x="0" y="33" width="233" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="ArialFont" size="14" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Trường Đại Học Bách Khoa Hà Nội]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bdd2a5a7-5ece-4ca8-b9c5-105522a57f95" x="365" y="53" width="138" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="ArialFont" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Độc lập - Tự do - Hạnh phúc]]></text>
+			</staticText>
+			<textField pattern="HH.mm">
+				<reportElement uuid="0014503d-a53a-4d6e-8bb1-7a9e276d832b" x="503" y="123" width="52" height="20"/>
+				<textElement>
+					<font fontName="ArialFont" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="44853a15-252b-48be-8dd5-fbd5e591c07b" x="365" y="73" width="138" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="ArialFont" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[--- --- --- --- --- --- --- --- --- --- --- --- -]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a7ed2426-f147-4ceb-9612-5fab43fae047" x="95" y="53" width="127" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="ArialFont" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Thư Viện Tạ Quang Bửu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e4090f40-20ea-4fa0-8b33-23aa85d6c13f" x="302" y="33" width="253" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="ArialFont" size="14" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a4f5af55-801b-43c6-9e58-f8c4c235e557" x="0" y="0" width="167" height="20"/>
+				<textElement>
+					<font fontName="ArialFont" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Nguyễn Hoàng Giang - 20151094]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="afa424d7-520c-4bed-a86d-c369709736c9" x="386" y="123" width="100" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="ArialFont" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="68caa63b-2f1b-4c9d-9d84-4517b7e2a883" x="13" y="53" width="121" height="111"/>
+				<imageExpression><![CDATA["E:\\Source Code\\Java\\QuanLyThuVienVer2.0\\src\\image\\lien-thong-dai-hoc-bach-khoa-ha-noi.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="7c01129c-1045-4c7a-9022-59ada9fff917" x="155" y="0" width="164" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ArialFont" size="14" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Giới Tính]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="97ebc22b-de6b-409c-89de-e610a562102a" x="319" y="0" width="100" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ArialFont" size="14" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Số Lượng]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="901204cb-3b09-4dc6-ac14-f14613a785b6" x="155" y="0" width="164" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ArialFont" size="14" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GioiTinh_20151094}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="29738618-47c0-4e54-954c-b5f5f217eb7c" x="319" y="0" width="100" height="20"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="ArialFont" size="14" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SoLuong_20151094}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="50">
+			<textField evaluationTime="Report">
+				<reportElement uuid="a6719db4-7c4e-4a89-abf7-4b5da2fc1c41" x="503" y="30" width="40" height="20"/>
+				<textElement>
+					<font fontName="ArialFont" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="45831736-e7ea-440a-a459-86696fe95fe0" x="423" y="30" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="ArialFont" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<summary>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="3b274967-949e-4c91-9048-fd3721e9ebea" x="346" y="20" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="ArialFont" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Người lập]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b5ac69a5-fe87-42f4-b712-c650eed884b1" x="346" y="40" width="100" height="20"/>
+				<textElement>
+					<font fontName="ArialFont" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[(Ký và ghi rõ họ tên)]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
